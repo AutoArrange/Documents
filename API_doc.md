@@ -354,7 +354,6 @@ GET /transfer-privilege?token=ae123nfiajo190139ndkaefn&id=13579&to=201805130000
 
 ### 发送通知
 
-形式等同于如此上传，对于服务器端，如果用php直接$_FILES就可以获取，NodeJS用express框架可用req.files方式获取
 
 ```http
 POST /upload-notification
@@ -370,7 +369,7 @@ POST /upload-notification
 | -------- | -------- | ------ | ---- | ------------------------------------------------- |
 | title    | 消息标题 | String | 否   |                                                   |
 | token    | 用户令牌 | String | 是   |                                                   |
-|          | 活动id   | String | 是   |                                                   |
+| id       | 活动id   | String | 是   |                                                   |
 | priority | 优先级   | String | 否   | 暂分为三个等级，"critical", "important", "normal" |
 | content  | 通知内容 | String | 是   | 富文本信息                                        |
 
